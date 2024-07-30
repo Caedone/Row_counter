@@ -2,8 +2,9 @@ close all;
 clear;
 clc;  
 
-%% pipeline to process data for online project
-% go to folder with raw csv files to process
+%% go to folder with raw csv files to process
+
+
 addpath(genpath('C:\Users\gangliagurdian\Desktop\Unsupervised Learning\Matlab code\Utilities\Offline'))
 
 
@@ -17,6 +18,7 @@ for i=1:sum(~cellfun(@isempty,{importedcsv.name})) %print out content of structu
     printimportcsv{i,3}=i
 end
 
+%% Asks which CSV file you would like to count
 prompt = 'Which CSV file would you like to count ';
 list = input(prompt)
 
